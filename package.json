@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
 	"type": "git",
-	"url": "https://github.com/mdulghier/nodejs-vienna"
+	"url": "https://github.com/mdulghier/nodejs-vienna-docker"
   },
   "dependencies": {
     "body-parser": "^1.9.2",

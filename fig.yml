@@ -1,0 +1,14 @@
+web:
+    build: .
+    command: ./node_modules/.bin/nodemon server.js
+    links: 
+        - redis:redis
+    ports:
+        - "3000:8080"
+    environment:
+        REDIS__HOST: "redis"
+    volumes:
+        - .:/app
+
+redis:
+    image: dockerfile/redis

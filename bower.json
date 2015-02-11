@@ -1,0 +1,21 @@
+{
+  "name": "servername-ninja",
+  "version": "1.0.0",
+  "authors": [
+    "Markus Dulghier <markus@dulghier.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "fontawesome": "~4.2.0"
+  }
+}

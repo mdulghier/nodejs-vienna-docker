@@ -1,0 +1,36 @@
+{
+  "name": "servernames-ninja",
+  "version": "1.0.0",
+  "description": "Generate names for your servers",
+  "main": "server.js",
+  "readme": "README.md",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "node_modules/.bin/bower install --allow-root",
+    "test": "npm run test-api && npm run test-app",
+    "test-api": "node_modules/.bin/mocha tests/setup.js tests/api/specs.js",
+    "test-app": "node_modules/.bin/mocha tests/setup.js tests/app/specs.js"
+  },
+  "author": "Markus Dulghier <markus@dulghier.com>",
+  "license": "MIT",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/mdulghier/nodejs-vienna"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.9.8",
+    "redis": "^0.12.1",
+    "serve-favicon": "^2.1.6"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^2.1.0",
+    "node-inspector": "^0.8.3",
+    "nodemon": "^1.3.6",
+    "supertest": "^0.15.0",
+    "wd": "^0.3.11"
+  }
+}
